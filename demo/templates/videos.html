@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>videos</title>
+</head>
+<body>
+	
+
+    <div class="row">
+      {% for x in videos %}
+
+     <video width="500" height="500" controls >
+	<source src="{{x.video.url}}" type="video/mp4">
+		<b>{{video.title}}</b>
+		</video>
+  
+
+      {% endfor %}
+</div>
+
+
+</body>
+</html>
